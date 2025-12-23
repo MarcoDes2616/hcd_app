@@ -1,1 +1,289 @@
 
+/* Navbar: Negro #0B0B0B
+
+Logo: versión dorado + rosado
+
+Botón principal (Comprar / Contacto): Dorado #D4AF6A
+
+Hover de botones: Rosado #E6A1B4
+
+Textos principales: Blanco marfil #FAFAF7
+
+Cards de productos: Champán claro #F5E9DA
+
+Precios / destacados: Dorado 
+
+Usa degradados suaves entre:
+
+#E6A1B4 → #D4AF6A
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100vw;
+  max-width: var(--maxVW);
+  margin: 0 auto;
+  background-color: var(--secondaryTC);
+}
+
+:root {
+  /* Textos */
+  --primaryTC: #ffffff;
+  --secondaryTC: #161616;
+
+  /* Marca principal (dorado rosé del logo) */
+  --primaryC: #E8B56A;     /* dorado */
+  --secondaryC: #C77D9D;   /* rosé elegante */
+
+  /* Acentos */
+  --primaryCC: #F5D28A;
+  --secondaryCC: #cccccc;
+
+  /* Backgrounds */
+  --primaryHC: #0f0f0f;
+  --secondaryHC: #1c1c1c;
+
+  --maxW: 1200px;
+  --maxVW: 1368px;
+}
+
+
+body {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primaryTC);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: var(--primaryHC);
+}
+
+
+button, a, i, li {
+  cursor: pointer;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Branding / frases elegantes */
+.s_family {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Headings fuertes */
+.h_family {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Pesos */
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+.s_family{
+  font-family: 'Dancing Script', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.small{
+  font-size: 10px;
+}
+
+.md{
+  font-size: 12px;
+}
+
+.big {
+  font-size: 16px;
+}
+
+.x-big {
+  font-size: 22px;
+}
+
+.xx-big {
+  font-size: 30px;
+}
+
+.center{
+  text-align: center;
+}
+
+/* universal style container */
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.al-c {
+  align-items: center;
+}
+
+.jf-c {
+  justify-content: center;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.full-w {
+  width: 100%;
+  max-width: var(--maxW);
+}
+
+.full-h {
+  height: 100%;
+  
+}
+
+.full-vw {
+  width: 100vw;
+  max-width: var(--maxVW);
+}
+
+.full-vh {
+  height: 100vh;
+}
+
+.round {
+  border-radius: 3px;
+}
+
+.sm {
+  width: 300px;
+}
+
+.md {
+  width: 95%;
+  max-width: 450px;
+}
+
+.lg {
+  width: 800px;
+}
+
+.autoM{
+  margin: 0 auto;
+}
+
+/* universar link style */
+
+li{
+  list-style: none;
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.curtain.hide {
+  opacity: 0;
+  z-index: -1;
+}
+
+.curtain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 1;
+  backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(15, 15, 15, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.jf-sb{
+  justify-content: space-between;
+}
+
+textarea {
+  resize: none;
+  padding: 0.3rem 0.8rem;
+  color: var(--primary-text-color);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+ 
+  .regular {
+    font-size: 14px;
+  }
+
+  .full-vw {
+    width: 100%;
+    max-width: 1368px;
+  }
+
+  .small{
+    font-size: 12px;
+  }
+  
+  .big {
+    font-size: 18px;
+  }
+  
+  .x-big {
+    font-size: 25px;
+  }
+
+  .xx-big {
+    font-size: 45px;
+  }
+}
