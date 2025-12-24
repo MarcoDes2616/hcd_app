@@ -164,6 +164,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.jf-sb{
+  justify-content: space-between;
+}
+
+.jf-sa{
+  justify-content: space-around;
+}
+
 .border {
   border: 1px solid red;
 }
@@ -238,9 +246,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease-in-out;
 }
 
-.jf-sb{
-  justify-content: space-between;
-}
+
 
 @media screen and (min-width: 768px) {
  

@@ -1,12 +1,14 @@
 import Nav from "./components/Nav";
 import "./app.css";
 import Header from "./components/Header";
+import BannerLL from "./components/BannerLL";
 
 function App() {
   return (
     <>
       <Nav />
-      {/* <Header /> */}
+      <BannerLL />
+      <Header />
     </>
   );
 }
