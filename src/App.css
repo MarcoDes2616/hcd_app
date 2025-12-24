@@ -1,0 +1,61 @@
+nav {
+  background-color: var(--primaryHC);
+  padding: 0.5rem;
+  height: 4rem;
+  box-shadow: 0px 0px 2px var(--secondaryC);
+}
+
+.btn_nav {
+  width: 40%;
+  max-width: 300px;
+}
+
+.menu_nav {
+  display: none;
+}
+
+.logo_nav {
+  width: 40%;
+  max-width: 200px;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.logo_nav img {
+  max-height: 3.5rem;
+  object-fit: contain;
+}
+
+.primnary_btn {
+  background: linear-gradient(90deg, var(--primaryC), var(--secondaryC));
+  color: var(--secondaryTC);
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    height: 5rem;
+    padding: 0.5rem 2rem;
+  }
+
+  .primnary_btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+
+  .logo_nav img {
+    max-height: 4.5rem;
+    object-fit: contain;
+  }
+  .menu_nav {
+    display: flex;
+    gap: 1rem;
+  }
+  .menu_nav li:hover {
+    color: var(--secondaryC);
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+  }
+}

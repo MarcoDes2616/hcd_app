@@ -1,22 +1,22 @@
-import React from "react";
+import PrimaryBtn from "./PrimaryBtn";
+
 
 const Nav = () => {
   return (
     <nav
-      className="full-w autoM flex row jf-sb al-c relative"
-      style={{ padding: "1rem 1.5rem" }}
+      className="full-w autoM flex row jf-sb al-c"
     >
       {/* Logo */}
-      <div className="flex al-c">
+      <div className="flex al-c logo_nav">
         <img
           src="/logo_h.png"
           alt="Hair Cosmetic Distribuciones"
-          style={{ height: "42px" }}
+          width={"100%"}
         />
       </div>
 
       {/* Menu */}
-      <ul className="flex row al-c gap">
+      <ul className="row al-c menu_nav">
         <li className="btn_app regular">Inicio</li>
         <li className="btn_app regular">Productos</li>
         <li className="btn_app regular">Distribución</li>
@@ -24,17 +24,9 @@ const Nav = () => {
       </ul>
 
       {/* CTA */}
-      <a
-        href="#contacto"
-        className="btn_app round bold"
-        style={{
-          padding: "0.5rem 1rem",
-          backgroundColor: "var(--primaryC)",
-          color: "#000",
-        }}
-      >
-        Sé distribuidor
-      </a>
+      <div className="btn_nav flex al-c jf-c">
+        <PrimaryBtn child={"Sé distribuidor"} onClick={() => {}} />
+      </div>
     </nav>
   );
 };
