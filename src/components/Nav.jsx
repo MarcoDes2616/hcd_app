@@ -1,11 +1,15 @@
-export default function Nav() {
+import React from "react";
+
+const Nav = () => {
   return (
-    <nav className="full-w autoM flex row jf-sb al-c relative" style={{ padding: "1rem 1.5rem" }}>
-      
+    <nav
+      className="full-w autoM flex row jf-sb al-c relative"
+      style={{ padding: "1rem 1.5rem" }}
+    >
       {/* Logo */}
       <div className="flex al-c">
-        <img 
-          src="/logo_h.png" 
+        <img
+          src="/logo_h.png"
           alt="Hair Cosmetic Distribuciones"
           style={{ height: "42px" }}
         />
@@ -20,17 +24,19 @@ export default function Nav() {
       </ul>
 
       {/* CTA */}
-      <a 
+      <a
         href="#contacto"
         className="btn_app round bold"
         style={{
           padding: "0.5rem 1rem",
           backgroundColor: "var(--primaryC)",
-          color: "#000"
+          color: "#000",
         }}
       >
         Sé distribuidor
       </a>
     </nav>
   );
-}
+};
+
+export default Nav;

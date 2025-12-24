@@ -56,8 +56,8 @@ Usa degradados suaves entre:
   --primaryHC: #0f0f0f;
   --secondaryHC: #1c1c1c;
 
-  --maxW: 1200px;
-  --maxVW: 1368px;
+  --maxW: 1368px;
+  --maxVW: 1440px;
 }
 
 
@@ -104,11 +104,6 @@ button, a, i, li {
 
 .bold {
   font-weight: 700;
-}
-
-
-.s_family{
-  font-family: 'Dancing Script', cursive;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -196,27 +191,21 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 3px;
 }
 
-.sm {
+.container_sm {
   width: 300px;
 }
 
-.md {
+.container_md {
   width: 95%;
   max-width: 450px;
 }
 
-.lg {
+.container_lg {
   width: 800px;
 }
 
 .autoM{
   margin: 0 auto;
-}
-
-/* universar link style */
-
-li{
-  list-style: none;
 }
 
 .relative{
@@ -251,13 +240,6 @@ li{
 
 .jf-sb{
   justify-content: space-between;
-}
-
-textarea {
-  resize: none;
-  padding: 0.3rem 0.8rem;
-  color: var(--primary-text-color);
-  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
