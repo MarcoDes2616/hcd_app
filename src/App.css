@@ -1,8 +1,15 @@
+body {
+  padding-top: 4.1rem;
+}
+
 nav {
   background-color: var(--primaryHC);
   padding: 0.5rem;
   height: 4rem;
   box-shadow: 0px 0px 2px var(--secondaryC);
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .btn_nav {
@@ -64,6 +71,10 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    padding-top: 5.1rem;
+  }
+
   nav {
     height: 5rem;
     padding: 0.5rem 2rem;

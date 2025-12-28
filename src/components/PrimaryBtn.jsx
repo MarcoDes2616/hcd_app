@@ -4,7 +4,7 @@ const PrimaryBtn = ({ child, onClick }) => {
   return (
     <button
         href="#contacto"
-        className="round bold primnary_btn h_family"
+        className="round primnary_btn w-b h_family"
       >
         {child}
       </button>

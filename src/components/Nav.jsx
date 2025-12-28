@@ -16,11 +16,11 @@ const Nav = () => {
       </div>
 
       {/* Menu */}
-      <ul className="row al-c menu_nav">
-        <li className="btn_app regular">Inicio</li>
-        <li className="btn_app regular">Productos</li>
-        <li className="btn_app regular">Distribución</li>
-        <li className="btn_app regular">Contacto</li>
+      <ul className="row al-c menu_nav s-m">
+        <li className="btn_app">Inicio</li>
+        <li className="btn_app">Productos</li>
+        <li className="btn_app">Distribución</li>
+        <li className="btn_app">Contacto</li>
       </ul>
 
       {/* CTA */}

@@ -1,4 +1,3 @@
-
 /* Navbar: Negro #0B0B0B
 
 Logo: versión dorado + rosado
@@ -19,11 +18,9 @@ Usa degradados suaves entre:
 
 */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -45,11 +42,11 @@ Usa degradados suaves entre:
   --secondaryTC: #161616;
 
   /* Marca principal (dorado rosé del logo) */
-  --primaryC: #E8B56A;     /* dorado */
-  --secondaryC: #C77D9D;   /* rosé elegante */
+  --primaryC: #e8b56a; /* dorado */
+  --secondaryC: #c77d9d; /* rosé elegante */
 
   /* Acentos */
-  --primaryCC: #F5D28A;
+  --primaryCC: #f5d28a;
   --secondaryCC: #cccccc;
 
   /* Backgrounds */
@@ -60,10 +57,9 @@ Usa degradados suaves entre:
   --maxVW: 1440px;
 }
 
-
 body {
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  font-family: "Montserrat", sans-serif;
   color: var(--primaryTC);
   font-size: 1.1rem;
   line-height: 1.6;
@@ -71,8 +67,10 @@ body {
   background-color: var(--primaryHC);
 }
 
-
-button, a, i, li {
+button,
+a,
+i,
+li {
   cursor: pointer;
   text-decoration: none;
   list-style: none;
@@ -80,57 +78,63 @@ button, a, i, li {
 
 /* Branding / frases elegantes */
 .s_family {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
 /* Headings fuertes */
 .h_family {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
 
 /* Pesos */
-.light {
+.w-l {
   font-weight: 300;
 }
 
-.regular {
+.w-r {
   font-weight: 400;
 }
 
-.medium {
+.w-m {
   font-weight: 500;
 }
 
-.bold {
+.w-b {
   font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
 }
 
-.small{
+/* Tamaños */
+.s-s {
   font-size: 10px;
 }
 
-.md{
+.s-m {
   font-size: 12px;
 }
 
-.big {
+.s-b {
   font-size: 16px;
 }
 
-.x-big {
+.s-x {
   font-size: 22px;
 }
 
-.xx-big {
+.s-xx {
   font-size: 30px;
 }
 
-.center{
+.center {
   text-align: center;
 }
 
@@ -164,11 +168,11 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-.jf-sb{
+.jf-sb {
   justify-content: space-between;
 }
 
-.jf-sa{
+.jf-sa {
   justify-content: space-around;
 }
 
@@ -183,7 +187,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .full-h {
   height: 100%;
-  
 }
 
 .full-vw {
@@ -212,15 +215,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 800px;
 }
 
-.autoM{
+.autoM {
   margin: 0 auto;
 }
 
-.relative{
+.relative {
   position: relative;
 }
 
-.absolute{
+.absolute {
   position: absolute;
 }
 
@@ -241,37 +244,35 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100;
   opacity: 1;
   backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   background-color: rgba(15, 15, 15, 0.5);
   transition: all 0.3s ease-in-out;
 }
 
-
-
 @media screen and (min-width: 768px) {
- 
-  .regular {
-    font-size: 14px;
-  }
-
   .full-vw {
     width: 100%;
     max-width: 1368px;
   }
 
-  .small{
+  /* Tamaños */
+  .s-s {
     font-size: 12px;
   }
-  
-  .big {
+
+  .s-m {
+    font-size: 14px;
+  }
+
+  .s-b {
     font-size: 18px;
   }
-  
-  .x-big {
+
+  .s-x {
     font-size: 25px;
   }
 
-  .xx-big {
+  .s-xx {
     font-size: 45px;
   }
 }
