@@ -64,7 +64,7 @@ function Slides() {
         modules={[Autoplay, Pagination, Navigation, HashNavigation]}
         className="al-c jf-c full-w"
         autoplay={{
-          delay: 4500,
+          delay: 5000,
           disableOnInteraction: false,
         }}
       >

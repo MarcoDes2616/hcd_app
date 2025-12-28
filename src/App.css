@@ -70,6 +70,81 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
+/* botones */
+.btn_gold {
+  background: linear-gradient(135deg, var(--primaryC), var(--secondaryC));
+  color: #000;
+  padding: 0.8rem 1.6rem;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+}
+
+.btn_gold:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* secciones */
+.section {
+  padding: 4rem 1rem;
+}
+
+.card {
+  background-color: var(--secondaryHC);
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+
+.whatsapp_floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--primaryC),
+    var(--secondaryC)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 28px;
+  z-index: 1500;
+  box-shadow: 0 0 15px rgba(232, 181, 106, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp_floating i {
+  color: #000;
+}
+
+.whatsapp_floating::after {
+  content: "Contáctanos";
+  position: absolute;
+  right: 70px;
+  background-color: var(--secondaryHC);
+  color: var(--primaryTC);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.whatsapp_floating:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
 @media screen and (min-width: 768px) {
   body {
     padding-top: 5.1rem;
@@ -109,4 +184,9 @@ nav {
     object-fit: contain;
     transform: rotate(5deg);
   }
+
+  .whatsapp_floating {
+  bottom: 30px;
+  right: 30px;
+}
 }

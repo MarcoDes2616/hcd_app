@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import defaultImage from "/ll.png";
+import PrimaryBtn from "../../../PrimaryBtn";
 
 const ItemSlide = ({ image, title, subtitle, description, button, type }) => {
   const container = {
@@ -28,7 +29,7 @@ const ItemSlide = ({ image, title, subtitle, description, button, type }) => {
       />
 
       <motion.div
-        className={`motion_container flex column absolute`}
+        className={`motion_container flex column jf-sb absolute`}
         variants={container}
         initial="hidden"
         animate="visible"
@@ -47,9 +48,7 @@ const ItemSlide = ({ image, title, subtitle, description, button, type }) => {
 
         {button && (
           <motion.div className="motion_item_actions flex jf-c" variants={item}>
-            <a href={button.action} className="btn_app round">
-              {button.text}
-            </a>
+            <PrimaryBtn child={button.text} onClick={() => {}} />
           </motion.div>
         )}
       </motion.div>
