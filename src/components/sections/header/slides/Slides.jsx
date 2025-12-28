@@ -1,26 +1,59 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation, HashNavigation } from "swiper/modules";
+import {
+  Autoplay,
+  Pagination,
+  Navigation,
+  HashNavigation,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import slide2 from "/slide-2.jpg";
-import slide3 from "/slide-3.jpg";
-import slide1 from "/m_slide1.jpeg"
 import ItemSlide from "./ItemSlide";
+import headerImg1 from "/header_bg.png";
+import luminoliss from "/ll.png";
+import headerImg3 from "/header_bg2.png";
 import "./slides.css";
 
 function Slides() {
   const dataSlides = [
     {
-      image: slide2,
+      image: headerImg1,
+      title: "Hair Cosmetic Distribuciones",
+      subtitle: "Belleza profesional para el cuidado capilar",
+      description:
+        "Distribuimos productos cosméticos de alta calidad para salones y profesionales del cabello.",
+      button: {
+        text: "Conócenos",
+        action: "#about",
+      },
+      type: "institutional",
     },
     {
-      image: slide3,
+      image: luminoliss,
+      title: "Luminoliss",
+      subtitle: "Alisado profesional sin formol",
+      description:
+        "Tecnología avanzada que alisa, nutre y devuelve el brillo natural al cabello sin comprometer la salud.",
+      button: {
+        text: "Ver producto",
+        action: "#luminoliss",
+      },
+      type: "product",
     },
     {
-      image: slide1,
+      image: headerImg3,
+      title: "Para todo tipo de cabellos",
+      subtitle: "Diversidad, belleza y cuidado real",
+      description:
+        "Productos diseñados para cabellos lisos, ondulados, rizados y afro. Porque cada cabello es único.",
+      button: {
+        text: "Nuestro catálogo",
+        action: "#catalogo",
+      },
+      type: "diversity",
     },
   ];
+
   return (
     <>
       <Swiper
@@ -29,15 +62,15 @@ function Slides() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation, HashNavigation]}
-        className="mySwiper al-c jf-c full-w"
+        className="al-c jf-c full-w"
         autoplay={{
-          delay: 3500,
+          delay: 4500,
           disableOnInteraction: false,
         }}
       >
-        {dataSlides.map((o, i) => (
+        {dataSlides.map((slide, i) => (
           <SwiperSlide key={i}>
-            {({ isActive }) => isActive && <ItemSlide image={o.image} i={i} />}
+            {({ isActive }) => isActive && <ItemSlide {...slide} index={i} />}
           </SwiperSlide>
         ))}
       </Swiper>

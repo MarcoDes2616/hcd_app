@@ -19,8 +19,8 @@ Usa degradados suaves entre:
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
   margin: 0;
@@ -59,7 +59,7 @@ Usa degradados suaves entre:
 
 body {
   width: 100vw;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--primaryTC);
   font-size: 1.1rem;
   line-height: 1.6;
@@ -78,12 +78,14 @@ li {
 
 /* Branding / frases elegantes */
 .s_family {
-  font-family: "Dancing Script", cursive;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  /* letter-spacing: 1px */
 }
 
 /* Headings fuertes */
 .h_family {
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
 }
 
@@ -273,6 +275,6 @@ h6 {
   }
 
   .s-xx {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
