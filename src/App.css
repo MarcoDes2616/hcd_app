@@ -114,7 +114,7 @@ nav {
   justify-content: center;
   color: #000;
   font-size: 28px;
-  z-index: 1500;
+  z-index: 100;
   box-shadow: 0 0 15px rgba(232, 181, 106, 0.6);
   transition: all 0.3s ease-in-out;
 }
@@ -142,6 +142,34 @@ nav {
 .whatsapp_floating:hover::after {
   opacity: 1;
   transform: translateX(0);
+}
+
+.footer_curtain{
+  background: linear-gradient(0deg, #000, #000, #000, transparent);
+  color: var(--primaryTC);
+  padding: 3rem 1rem;
+  z-index: 101;
+}
+
+.social_link {
+  gap: 0.5rem;
+  color: var(--primaryTC);
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.social_link i {
+  font-size: 1.5rem;
+  color: var(--primaryC); /* dorado del branding */
+}
+
+.social_link:hover {
+  color: var(--secondaryC); /* rosé */
+  transform: translateY(-2px);
+}
+
+.social_link:hover i {
+  color: var(--secondaryC);
 }
 
 

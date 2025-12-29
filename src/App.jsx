@@ -4,6 +4,9 @@ import Header from "./components/sections/header/Header";
 import BannerLL from "./components/BannerLL";
 import LuminolissPage from "./pages/luminoliss/LuminolissPage";
 import WhatsAppButton from "./components/WhatsAppButton";
+import AboutBusiness from "./components/sections/AboutBusiness";
+import Distribution from "./components/sections/Distribution";
+import Footer from "./components/sections/Footer";
 
 function App() {
   return (
@@ -12,10 +15,12 @@ function App() {
       {/* <BannerLL /> */}
       <Header />
       {/* <LuminolissPage /> */}
+      <AboutBusiness />
+      <Distribution />
+      <Footer />
       <WhatsAppButton />
     </>
   );
 }
 
 export default App;
-
