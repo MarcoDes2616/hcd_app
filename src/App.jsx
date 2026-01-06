@@ -1,25 +1,19 @@
 import Nav from "./components/Nav";
 import "./app.css";
-import Header from "./components/sections/header/Header";
-import BannerLL from "./components/BannerLL";
-import LuminolissPage from "./pages/luminoliss/LuminolissPage";
-import WhatsAppButton from "./components/WhatsAppButton";
-import AboutBusiness from "./components/sections/AboutBusiness";
-import Distribution from "./components/sections/Distribution";
-import Footer from "./components/sections/Footer";
+import { Routes, Route, HashRouter } from "react-router-dom";
+import Home from "./pages/home/Home";
+import NotFound from "./pages/404/NotFound";
 
 function App() {
-  return (
-    <>
+   return (
+    <HashRouter>
+      {/* <Loading openModal={isLoading} /> */}
       <Nav />
-      {/* <BannerLL /> */}
-      <Header />
-      {/* <LuminolissPage /> */}
-      <AboutBusiness />
-      <Distribution />
-      <Footer />
-      <WhatsAppButton />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
