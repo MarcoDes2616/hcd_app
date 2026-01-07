@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from "./components/Nav";
-import "./app.css";
+import "./App.css";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/home/Home";
 import NotFound from "./pages/404/NotFound";
