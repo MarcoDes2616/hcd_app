@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import defaultImage from "/ll.png";
 import PrimaryBtn from "../../../PrimaryBtn";
+import React from 'react';
 
 const ItemSlide = ({ image, title, subtitle, description, button, type }) => {
   const container = {

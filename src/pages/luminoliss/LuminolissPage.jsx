@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import PrimaryBtn from "../../components/PrimaryBtn";
-
+import React from 'react';
 import bannerImg from "/ll.png";
 import productImg from "/luminoliss-hero.png";
 import sealImg from "/original.png";

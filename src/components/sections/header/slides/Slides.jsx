@@ -13,6 +13,7 @@ import headerImg1 from "/header_bg.png";
 import luminoliss from "/ll.png";
 import headerImg3 from "/header_bg2.png";
 import "./slides.css";
+import React from 'react';
 
 function Slides() {
   const dataSlides = [

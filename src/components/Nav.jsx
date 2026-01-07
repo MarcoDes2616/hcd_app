@@ -1,4 +1,5 @@
 import PrimaryBtn from "./PrimaryBtn";
+import React from 'react';
 
 
 const Nav = () => {

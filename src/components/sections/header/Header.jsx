@@ -1,5 +1,6 @@
 import "./header.css"
 import Slides from "./slides/Slides";
+import React from 'react';
 
 const Header = () => {
   return (

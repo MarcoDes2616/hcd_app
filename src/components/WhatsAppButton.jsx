@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import React from 'react';
 
 const WhatsAppButton = () => {
   const phoneNumber = "584225112810";

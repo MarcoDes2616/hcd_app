@@ -1,3 +1,4 @@
+import React from 'react';
 import Nav from "./components/Nav";
 import "./app.css";
 import { Routes, Route, HashRouter } from "react-router-dom";
