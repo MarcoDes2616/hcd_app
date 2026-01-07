@@ -11,8 +11,6 @@ const Home = () => {
       <Header />
       <AboutBusiness />
       <Distribution />
-      <Footer />
-      <WhatsAppButton />
     </>
   );
 };
